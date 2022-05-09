@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tipe Data Object</title>
+    </head>
+    <body>
+        <h1>Tipe Data Object</h1>
+        <script>
+
+            const person = {};
+
+            //ubah property/ stribute
+            person["nama"] = "Anggit Puguh S";
+            person["alamat"] = "Wonogiri";
+            person["umur"] = 32;
+
+            console.table(person);
+
+            delete person["umur"];
+            console.table(person);
+
+            //buat langsung banyak
+            const orang = {
+                "Nama Lengkap" : "Cristiano Ronaldo",
+                Alamat : "Jogja",
+                Umur : 25
+            };
+            console.table(orang);
+
+            console.info(`Nama : ${orang["Nama Lengkap"]}`);
+            console.info(`Alamat : ${orang.Alamat}`);
+            console.info(`Umur : ${orang.Umur}`);
+</script>
+    </body>
+</html>

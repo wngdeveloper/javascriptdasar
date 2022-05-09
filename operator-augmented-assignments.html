@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <title>Operator Augmented Assignments</title>
+    </head>
+    <body>
+        <h1>Operator Augmented Assignments</h1>
+        <script>
+            let result = 1+2;
+            document.writeln("<p>1+2 = " + result + "</p>");
+            let originalResult = result;//
+            
+            result -= 1; //2
+            document.writeln("<p>" + originalResult + "-1=" + result + "</p>");
+            originalResult = result; //2
+
+            result *= 2; //4
+            document.writeln("<p>" + originalResult + "*2= " + result + "</p>");
+
+            result *= 10;
+            document.writeln(result);
+        </script>
+    </body>
+</html>
