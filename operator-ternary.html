@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <title>Operator</title>
+    </head>
+    <body>
+        <h1>Operator Ternary</h1>
+        
+        <script>
+            const nilai = 90;
+            let ucapan;
+
+            if (nilai > 75){
+                ucapan = "Selamat Anda lulus";
+            } else {
+                ucapan = "Coba lagi ya";
+            }
+
+            document.writeln(`<p>${ucapan}</p>`);
+            
+         
+            ucapan = nilai >= 75 ? "Selamat Anda Lulus" : "Silakan coba lagi";
+
+            document.writeln(`<p>${ucapan}</p>`);
+        </script>
+
+    </body>
+</html>

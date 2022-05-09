@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <title>Operator In</title>
+    </head>
+    <body>
+        <h1>Operator In</h1>
+        
+        <script>
+           const person = {
+               firstname : "Anggit",
+               lastname : "Setyawan"
+           }
+
+           const result = "firstname" in person;
+        //    document.writeln(`<p> ${result} </p>`);
+           console.info(`${result}`);
+
+           const siswa ={
+               firstName: "Andi",
+            //    middleName: "Benny",
+               lastName: "Cici"
+           }
+
+           if("middleName" in siswa){
+               alert(`Hello ${siswa.middleName}`);
+           }else{
+               alert("Hello Siswa");
+           }
+
+           const names = [null, "Dua", null];
+           const result1 = 0 in names;
+           document.writeln(`<p>${result1}</p>`);
+
+        </script>
+
+    </body>
+</html>
