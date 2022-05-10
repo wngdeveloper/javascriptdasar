@@ -8,7 +8,11 @@
         <h1>Operator Nullish Coalescing</h1>
         
        <script>
-           let parameter="joko";
+        //    RANGKUMAN
+        //    - Nullis value  adalah null dan undefined
+        //    - Nullist coalescing operator (??) adalah operator mirip dengan ternary operator. Yang membedakan adalah pada kondisi, jika bernilai null atau undefined, baru value defaultnya diambil. 
+
+           let parameter;
 
            let data=parameter;
            
@@ -18,9 +22,17 @@
 
            document.writeln(`<p>${data}</p>`);
 
+           
+           //-----------------------------------
            data = parameter ?? "Nilai Default";
 
            document.writeln(`<p>${data}</p>`);
+
+           //-----------------------------------
+           let siapa = parameter ?? "Apa saja lah";
+
+           console.info(`${siapa}`);
+
        </script>
 
     </body>
