@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <title>Destructuring</title>
+    </head>
+    <body>
+        <h1>Destructuring</h1>
+        
+        <script>
+            {
+            //cara biasa
+            // const names = ["Anggit", "Puguh", "Setyawan"];
+            // const firstName = names[0];
+            // const middleName = names[1];
+            // const lastName = names[2];
+
+            const names = ["Eko", "Kurniawan", "Setyawan", "Biodo", "Joko"];
+            const[firstName, middleName, lastName, ...others] = names;
+
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+            console.info(others); 
+            }
+
+            {
+                const person = {
+                    firstName: "Anggit",
+                    lastName: "Puguh",
+                    address: {
+                        street: "Jalan Lele 4",
+                        city: "Jakarta",
+                        country: "Indonesia"
+                    },
+                    hobby: "Game",
+                    channel: "Nat GEO"
+                }
+            
+            let {firstName, middleName, lastName, address, ...others} = person;
+            console.info(firstName);
+            console.info(lastName);
+            console.info(middleName);
+            console.info(others);
+        };
+        </script>
+
+    </body>
+</html>

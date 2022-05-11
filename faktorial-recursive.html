@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <title>Faktorial Recursive</title>
+    </head>
+    <body>
+        <h1>Faktorial Recursive</h1>
+        
+       <script>
+           function faktorialRecursive(value){
+               if (value === 1){
+                   return 1;
+               } else {
+                   return value * faktorialRecursive(value -1);
+               }
+           }
+
+           console.info(faktorialRecursive(7));
+
+       </script>
+
+    </body>
+</html>
