@@ -1,1 +1,5 @@
 05:44:44 - Anonymous Function
+06:14 > logic e masih bingung kok dapat nilai value ne -1
+06:39 > Arrow Function sebagai parameter | pelajari lagi ya.
+06:47 > return add ini kembalikan nilai ke value atau kemana ?
+06:47:49 - Object Method
