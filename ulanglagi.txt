@@ -3,5 +3,6 @@
 06:39 > Arrow Function sebagai parameter | pelajari lagi ya.
 06:47 > return add ini kembalikan nilai ke value atau kemana ?
 06:47:49 - Object Method
+07:46 - strict mode | pelajari lagi untuk menggantikan with
 
 sampai 7:27

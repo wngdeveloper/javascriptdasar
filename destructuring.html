@@ -25,24 +25,114 @@
             }
 
             {
+            //     const person = {
+            //         firstName: "Anggit",
+            //         lastName: "Puguh",
+            //         address: {
+            //             street: "Jalan Lele 4",
+            //             city: "Jakarta",
+            //             country: "Indonesia"
+            //         },
+            //         hobby: "Game",
+            //         channel: "Nat GEO"
+            //     }
+            
+            // let {firstName, middleName, lastName, address, ...others} = person;
+            // console.info(firstName);
+            // console.info(lastName);
+            // console.info(middleName);
+            // console.info(others);
+            // console.info(others.hobby);
+            // console.info(others.channel)
+        }
+
+        {
+            //DESTRUCTURING NESTED OBJECT
+            //     const person = {
+            //         firstName: "Anggit",
+            //         lastName: "Puguh",
+            //         address: {
+            //             street: "Jalan Lele 4",
+            //             city: "Jakarta",
+            //             country: "Indonesia"
+            //         },
+            //         hobby: "Game",
+            //         channel: "Nat GEO"
+            //     }
+            
+            // let {firstName, middleName, lastName, address:{city, street, country}, ...others} = person;
+            // console.info(firstName);
+            // console.info(lastName);
+            // console.info(others.hobby);
+            // console.info(others);
+            // console.info(street);
+          
+        }
+
+        {
+            //DESTRUCTURING DI FUNCTION PARAMETER (1)
+            // function displayPerson({firstName, middleName, lastName}){
+            //     console.info(firstName);
+            //     console.info(middleName);
+            //     console.info(lastName);
+            // }
+
+            // const person = {
+            //     firstName: "Anggit",
+            //     middleName: "Puguh",
+            //     lastName: "Setyawan"
+            // }
+
+            // displayPerson(person);
+        }
+
+        {
+            //DESTRUCTURING DI FUNCTION PARAMETER (2)
+            // function jumlah([pertama, kedua]){
+            //     return pertama + kedua;
+            // }
+
+            // console.info(jumlah([10,10]));
+            // console.info(jumlah([34,45]));
+        }
+
+        {
+            //DEFAULT VALUE DESTRUCTURING ARRAY
+            // const names = ["Puguh", "Setyawan"];
+            // const [firstName, middleName, lastName = "Muhammad"] = names;
+
+            // console.info(firstName);
+            // console.info(middleName);
+            // console.info(lastName);
+        }
+
+        {
+             //DESTRUCTURING NESTED OBJECT
                 const person = {
                     firstName: "Anggit",
-                    lastName: "Puguh",
-                    address: {
-                        street: "Jalan Lele 4",
-                        city: "Jakarta",
-                        country: "Indonesia"
-                    },
-                    hobby: "Game",
-                    channel: "Nat GEO"
-                }
+                    lastName: "Puguh"
+                };
             
-            let {firstName, middleName, lastName, address, ...others} = person;
+            let {firstName, middleName="Nama Tengah", lastName} = person;
             console.info(firstName);
-            console.info(lastName);
             console.info(middleName);
-            console.info(others);
-        };
+            console.info(lastName);
+        }
+
+        {
+             //DESTRUCTURING NESTED OBJECT : MENGGUNAKAN NAMA VARIABLE LAIN
+                const person = {
+                    firstName: "Anggit",
+                    lastName: "Puguh"
+                };
+            
+            let {firstName: namaDepan, 
+                middleName: namaTengah="Annas", 
+                lastName: namaBelakang} = person;
+            console.info(namaDepan);
+            console.info(namaTengah);
+            console.info(namaBelakang);
+        }
         </script>
 
     </body>

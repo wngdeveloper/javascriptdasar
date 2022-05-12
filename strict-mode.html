@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <title>Strict Mode</title>
+    </head>
+    <body>
+        <h1>Strict Mode</h1>
+        
+        <script>
+            function useStrictMode(){
+                'use strict';
+                const person = {
+                    firstName: "Eko"
+                };
+
+                //error
+                // with(person){
+                //     console.info(firstName);
+                // }
+
+                console.info(person.firstName)
+            };
+
+            useStrictMode();
+        </script>
+
+    </body>
+</html>
