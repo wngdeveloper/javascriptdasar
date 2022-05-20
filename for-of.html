@@ -8,18 +8,20 @@
         <h1>For Of</h1>
         
         <script>
-            const person = ["Dwi", "Eko", "Fitri"];
+           
 
-            for (const name of person){
-                document.writeln(`<p>${name}</p>`)
-            }
+            //two sum
+            let nums = [2,7,11,15];
+            let target = 9;
 
-            const namaLengkap = "Anggit Puguh Setyawan";
-
-            for (const character of namaLengkap){
-                document.writeln(`<p>${character}</p>`)
-            }
-
+            const twoSum = (nums, target) => {
+                let storage = {};
+                for (let [index, num] of nums.entries()){
+                    if(storage[num] !== undefined) return [storage[num], index];
+                    storage[target-num] = index;
+                }
+            };
+            console.log(twoSum);
         </script>
 
     </body>
