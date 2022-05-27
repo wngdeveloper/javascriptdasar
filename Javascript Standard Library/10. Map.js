@@ -11,3 +11,5 @@ console.log(map.get("Address"));
 for (const element of map){
     console.info(`${element[0]} : ${element[1]}`);
 }
+
+map.forEach((value, key) => console.info(`${key} : ${value}`));
