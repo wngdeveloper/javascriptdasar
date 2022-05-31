@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>With Modules</title>
+    <script type="module" src="scripts/library.js"></script>
+</head>
+<h1>Mari belajar Javascript Modules</h1>
+
+<body>
+    <p>Bismillahirrohmanirrohim</p>
+
+<script type="module">
+
+import {sayHello, sayGoodBye, name} from "./scripts/say.js"
+
+    sayHello('Anggit');
+    sayGoodBye('Puguh');
+
+    // console.log(name);
+</script>    
+</body>
+</html>
