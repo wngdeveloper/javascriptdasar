@@ -17,6 +17,7 @@
     const json = JSON.stringify(person);
     const personAgain = JSON.parse(json);
 
-    // console.info(json);
+    console.info(json);
+    console.log(`##########################`);
     console.info(personAgain);
 }
