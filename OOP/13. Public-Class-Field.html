@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Public Class Field
+    </title>
+</head>
+<body>
+    <script>
+        {
+            class Customer {
+            firstName;
+            lastName; 
+            balance = 0;
+
+            constructor(){
+            }
+
+            sayHello(){
+            }
+        }
+
+        const eko = new Customer();
+        console.log(eko);
+
+        }
+        console.log("##############################");
+        {
+            //PUBLIC CLASS FIELD DAN CONSTRUCTOR
+            class Customer {
+                firstName;
+                lastName;
+                balance = 0;
+
+                constructor(firstName, lastName){ //ubah data via constructor
+                    this.firstName = firstName;
+                    this.lastName = lastName;
+                }
+            }
+
+            const eko = new Customer("Eko", "Khannedy");
+            console.log(eko);
+        }        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Class Inheritance</title>
+</head>
+<body>
+<script>
+    class Employee {
+        constructor(firstName){
+            this.firstName = firstName;
+        }
+
+        sayHello(name){
+            console.log(`Hello ${name}, my name is employee ${this.firstName}`);
+        }
+    }
+
+    class Manager extends Employee{
+
+        constructor(firstName, lastName){
+            super(firstName);
+            this.lastName = lastName;
+        }
+
+        sayHello(name){
+            console.log(`Hello ${name}, my name is Manager ${this.firstName} ${this.lastName}`);
+        }
+    }
+
+    const budi = new Employee("Budi");
+    // budi.name = "Budi"; //tidak perlu lagi
+    budi.sayHello("Joko");
+    
+    const eko = new Manager("Eko", "Khannedy");
+    // eko.name = "Eko";
+    eko.sayHello("Syahrul");
+
+    console.log(budi);
+    console.log(eko);
+
+</script>
+</body>
+</html>
+
