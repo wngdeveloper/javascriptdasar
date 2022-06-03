@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Static Field
+    </title>
+</head>
+<body>
+   <script>
+       
+       class Configuration {
+           static name = "Belajar Bahasa Pemrograman";
+           static version = 1.0;
+           static author = "Anggit Puguh"
+       }
+
+       //Kalau dipanggil menggunakan Object seperti ini, maka tidak akan bisa.
+       const config = new Configuration();
+       console.log(config); // ini tidak akan terdetek
+
+       Configuration.author = "Setyawan" ; //bisa di replace static field nya
+
+       console.log(Configuration.name);
+       console.log(Configuration.version);
+       console.log(Configuration.author);
+
+   </script>
+</body>
+</html>

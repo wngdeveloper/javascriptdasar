@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Error Handling
+    </title>
+</head>
+<body>
+    <script>
+
+        class MathUtil {
+
+            static sum(...numbers){
+             
+                if(numbers.length === 0){
+                throw new Error("Total parameter harus lebih dari 0");
+            }
+
+                let total =0;
+                for (const number of numbers) {
+                    total += number;
+                }
+                return total;
+            }
+        }
+
+        try {
+            console.log(MathUtil.sum());
+            console.log(oke);
+        } catch (error) {
+            console.log(`Terjadi Error : ${error.message}`);
+        } finally {
+            console.log("Program Selesai");
+        }
+
+        console.log("Anggit Puguh Setyawan");
+
+    </script>
+</body>
+</html>
