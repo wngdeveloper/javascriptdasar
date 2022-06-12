@@ -6,7 +6,7 @@ function Employee(firstName){
 }
 
 function Manager(firstName, lastName){
-    Employee.call(this, firstName); //'call' digunakan untuk copy dari cunstructor lain, kemudian parameternya silakan diisi sesuai constructor asal
+    Employee.call(this, firstName); //'call' digunakan untuk diwarisi dari constructor lain, kemudian parameternya silakan diisi sesuai constructor asal
     this.lastName = lastName;
 }
 

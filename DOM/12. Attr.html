@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute</title>
+</head>
+    <body>
+        <img id="logo" src="https://www.programmerzamannow.com/img/pzn.png" alt="PZN Logo">
+        <script>
+            {
+                const logo = document.getElementById("logo");
+                const src = logo.getAttributeNode("src");
+
+                console.log(src.name);
+                console.log(src.value);
+
+            }
+            {
+                console.log('######BATAS#####');
+
+                const logo = document.getElementById("logo");
+
+                const src = logo.getAttribute("src");  //cara attr value
+                console.log(src);
+            }            
+
+        </script>
+    </body>
+</html>

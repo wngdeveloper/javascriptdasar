@@ -1,0 +1,42 @@
+<!-- Nodelist
+NodeList adalah kumpulan dari Node
+Biasanya NodeList digunakan ketika kita menyeleksi banyak Node sekaligus, misal ketika kita ingin mengambil semua children di Node misalnya
+https://developer.mozilla.org/en-US/docs/Web/API/NodeList  -->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nodelist Static</title>
+</head>
+    <body>
+        <!-- ul>li*3  -->
+        
+        <ul id="menu1">
+            <li id="satu">First</li>
+            <li id="dua">Second</li>
+            <li id="tiga">Third</li>
+        </ul>
+
+        <ul id="menu2">
+            <li>Anggit</li>
+            <li>Puguh</li>
+            <li>Setyawan</li>
+        </ul>
+
+        <script>
+            let list = document.querySelectorAll("li");  
+            
+            const menu1 = document.getElementById("menu1");
+            
+            menu1.appendChild(document.createElement("li"));
+            menu1.appendChild(document.createElement("li"));
+
+            console.info(list);
+
+            list = document.querySelectorAll("li");
+            console.log(list);
+
+
+        </script>
+    </body>
+</html>
