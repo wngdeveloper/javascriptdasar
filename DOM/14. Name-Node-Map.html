@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>NameNoteMap</title>
+</head>
+    <body>
+        <img id="logo" src="https://programmerzamannow.com/img/pzn.png" alt="PZN Logo">
+        <script>
+            
+
+            const logo = document.getElementById("logo");
+            const attributes = logo.attributes
+            
+            const src = logo.getAttribute("src");
+            const src2 = logo.getAttributeNames("PZN logo");
+            console.log(src);
+            console.log(src2);
+
+            // const logo = document.getElementById("logo");
+
+            // const src = logo.getAttribute("src");  //cara attr value
+            // console.log(src);
+
+            for (let attribute of attributes) {
+                console.log(`${attribute.name}:${attribute.value}`);                
+            }
+
+        </script>
+    </body>
+</html>
