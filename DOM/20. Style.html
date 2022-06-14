@@ -1,0 +1,30 @@
+<!-- Style
+DOM juga bisa digunakan untuk memanipulasi attribute style pada element dengan lebih mudah
+Kita tidak perlu menggunakan setAttribute(“style”, “value”) setiap ingin mengubah style sebuah element
+Kita bisa langsung gunakan element.style.name = value
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style  -->
+
+<html>
+    <head>
+        <title>Style</title>
+    </head>
+    <body>
+        <input type="button" value="blue">
+        <input type="button" value="red">
+        <input type="button" value="yellow">
+        <div id="canvas" style="width: 500px; height: 500px; background-color: black;">
+        </div>
+        <script>
+           
+           const canvas = document.getElementById("canvas"); //mengambil canvasnya dulu
+           const buttons = document.querySelectorAll("input") //mengambil semua input dan disimpan didalam button
+
+        for (let button of buttons){
+            button.onclick = function(){
+                canvas.style.backgroundColor = button.getAttribute("value"); //canvasnya diganti backgroundcolor
+            };
+        }
+        
+        </script>
+    </body>
+</html>

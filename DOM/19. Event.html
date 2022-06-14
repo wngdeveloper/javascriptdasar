@@ -1,0 +1,26 @@
+<!-- Event
+Jenis Event
+DOM sendiri memiliki banyak sekali jenis event, tidak hanya click
+Jenis event yang bisa kita gunakan biasanya disesuaikan dengan target event nya, misal pada element video, ada event play, pause, sedangkan pada element button, tidak ada event play atau pause
+Untuk lebih detailnya, ada apa saja jenis event nya, kita bisa lihat pada halaman berikut :
+https://developer.mozilla.org/en-US/docs/Web/Events  -->
+
+<html>
+    <head>
+        <title>Event</title>
+    </head>
+    <body>
+        <h1 id="text">Click Yelllow Box</h1>
+        <div id="canvas" style="width: 500px; height: 500px; background-color: yellowgreen;"></div>
+        
+        <script>
+            
+            const canvas = document.getElementById("canvas");
+            const text = document.getElementById("text");
+
+            canvas.onclick = function(event){
+                text.textContent = `You click at (${event.x} sumbu x, ${event.y} sumbu y)`;
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- Membuat Text Node
+Kita juga bisa membuat Text Node menggunakan method document.createTextNode(string)
+Hasilnya berupa Text yang bisa kita tambahkan ke Node lain -->
+
+
+<html>
+    <head>
+        <title>Membuat Text Node</title>
+    </head>
+    <body>
+
+        <script>
+            
+            const text = document.createTextNode("Anggit Puguh Setyawan");
+            document.body.appendChild(text); //memasukkan ke body. kalau masukkan ke paragraf pakainya getElementByID
+
+        </script>
+    </body>
+</html>
