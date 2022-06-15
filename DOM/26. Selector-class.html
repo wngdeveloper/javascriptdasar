@@ -1,0 +1,24 @@
+<!-- Class Selector
+Class Selector merupakan selector untuk menyeleksi semua element yang memiliki class yang sesuai selector
+Untuk menggunakannya, kita bisa sebutkan nama class nya diawali dengan titik
+https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors  -->
+
+
+<html>
+    <head>
+        <title>Class Selector</title>
+    </head>
+    <body>
+        <ul>
+            <li class="menuItem">Satu</li>
+            <li>Dua</li>
+            <li class="menuItem">Tiga</li>
+        </ul>
+
+        <script>
+            const menuItems = document.querySelectorAll(".menuItem"); //atau bisa juga dengan perintah dibawah yang spesifik
+            // const menuItems = document.querySelectorAll("li.menuItem"); 
+            console.log(menuItems);
+        </script>
+    </body>
+</html>

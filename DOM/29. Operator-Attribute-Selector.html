@@ -1,0 +1,21 @@
+<!-- Operator Attribute Selector
+Kita juga bisa menggunakan operator pada attribut selector
+Misal [attribute=value], [attribute^=value] dan lain-lain
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#syntax  -->
+
+
+<html>
+    <head>
+        <title>Opertar Attribute Selector</title>
+    </head>
+    <body>
+        <div class="anggit">Anggit</div>
+        <div class="puguh">Puguh</div>
+        <div class="setyawan">Setyawan</div>
+
+        <script>
+            const list = document.querySelectorAll("div[class^='puguh']");
+            console.log(list);
+        </script>
+    </body>
+</html>
