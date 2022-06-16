@@ -1,0 +1,24 @@
+<!-- HTML Element
+Element merupakan representasi dalam DOM
+Namun, saat menggunakan HTML, implementasi detail nya sebenarnya adalah HTML Element, yaitu turunan dari Element
+HTML Element memiliki banyak sekali property dan method tambahan selain dari Element DOM
+Kebanyakan HTML Element memiliki property yang sesuai dengan attribute yang ada pada tag html tersebut, oleh karena itu, kadang kita tidak butuh lagi menggunakan method setAttribute dan getAttribute
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement  -->
+
+<html>
+    <head>
+        <title>HTML Element</title>
+    </head>
+    <body>
+        <a id="link"></a>
+
+        <script>
+
+            const link = document.getElementById("link");
+            link.href = "https://www.programmerzamannow.com";
+            link.target = "_blank";
+            link.textContent = "WEbsite Tutorial Coding";
+            
+        </script>
+    </body>
+</html>
