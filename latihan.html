@@ -2,7 +2,11 @@
 //     console.log("*");
 // } -->
 
+<!-- https://www.codepolitan.com/mencetak-beragam-pola-dengan-konsep-perulangan-1/
+https://dutormasi.com/2019/12/membuat-segitiga-dan-piramida-dengan-angka-dan-bintang-java.html -->
+<!-- https://sarapankoding.com/blog/cara-membuat-program-pola-segitiga-bintang 
 
+https://hangsbreaker.blogspot.com/2014/12/javascript-perulangan-dan-segitiga.html-->
 
 <!DOCTYPE html>
 <html lang="em">
@@ -14,23 +18,89 @@
 		<h1>Materi Javasript Dasar</h1>
 
 		<body>
-			<script>
+			<!-- <script>
 
-				var a;
-				var b;
-				var c;
+				// var a;
+				// var b;
+				// var c;
 
-				for( a=10; a>=0; a--){
-					for( b=0; b<a; b++){
-						document.write("&nbsp;");
-					}	
+				// for( a=10; a>=0; a--){
+				// 	for( b=0; b<a; b++){
+				// 		document.write("&nbsp;");
+				// 	}	
 
-					for( c=10; c>=a; c--){
-						document.write("*");
-					}
-					document.write("<br/>");
-				}
-			</script>
+				// 	for( c=10; c>=a; c--){
+				// 		document.write("*");
+				// 	}
+				// 	document.write("<br/>");
+				// }
+			</script> -->
+
+<script type="text/javascript" charset="utf-8">
+    document.write("- Segitiga 1<br>");
+    for (var i=1;i<=5;i++){
+        for (var j=1;j<=i;j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("- Segitiga 2<br>");
+    for (var i=1;i<=5;i++){
+        for (var j=i;j<=5;j++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("- Segitiga 3<br>");
+    for (var i=1;i<=5;i++){
+        for (var j=i;j<=5;j++){
+            document.write('\xa0\xa0');
+        }
+        for (var k=1;k<=i;k++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("- Segitiga 4<br>");
+    for (var i=1;i<=5;i++){
+        for (var j=1;j<=i;j++){
+            // document.write("&nbsp&nbsp");
+            document.write("_");
+        }
+        for (var k=i;k<=5;k++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+ 
+   
+document.write("- Piramida 1<br>");
+    for (var i=1;i<=5;i++){
+        for (var j=i;j<=5;j++){
+            document.write("_");
+        }
+        for (var k=1;k<=i;k++){
+            document.write("*");
+        }
+        for (var l=1;l<=i-1;l++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("- Piramida 2<br>");
+    for (var i=1;i<=5;i++){
+        for (var j=1;j<=i;j++){
+            document.write("_");
+        }
+        for (var k=i;k<=5;k++){
+            document.write("*");
+        }
+        for (var l=i+1;l<=5;l++){
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script> 
 		
 	</body>
 </html>

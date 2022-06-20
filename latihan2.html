@@ -13,14 +13,48 @@
 
 		<body>
 			<script>
-
-				for (let i=1;i<=5;i++){
-					for (let j=i;j<=5;j++){
-						document.write("*");
+				{
+					for( a=4; a>=0; a--){ // a=4
+						for( b=0; b<a; b++){ // b=0
+							document.write("*");
+						}	
+							document.write("<br/>");
 					}
-					document.write("</br>")
 				}
-
+				{
+						function segitiga4(panjang) {
+						let hasil = '';
+						for (let i = panjang; i > 0; i--) {
+							for (let j = panjang; j > 0; j--) {
+								if (j > i) {
+									hasil += ' ';
+								} else {
+									hasil += '* '
+								}
+							}
+							hasil += '\n';
+						}
+						return hasil;
+					}
+					console.log(segitiga4(10));
+				}
+				{
+						function segitiga3(panjang) {
+						let hasil = '';
+						for (let i = panjang; i > 0; i--) {
+							for (let j = 1; j <= panjang; j++) {
+								if (j >= i) {
+									hasil += '* ';
+								} else {
+									hasil += ' '
+								}
+							}
+							hasil += '\n';
+						}
+						return hasil;
+					}
+					console.log(segitiga3(10));
+				}
 			</script>
 		
 	</body>
