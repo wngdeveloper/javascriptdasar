@@ -38,21 +38,50 @@
 //     }
 //     console.log("\n>");
 // }
-function segitiga1(panjang) {
-    let hasil = '';
-    for (let i = panjang; i >0; i--) {
-        for (let j = 0; j <= i; j++) {
-            hasil += '* ';
-        }
-        hasil += '\n';
-    }
-    return hasil;
-}
-console.log(segitiga1(5));
+
+// function segitiga1(panjang) {
+//     let hasil = '';
+//     for (let i = panjang; i >0; i--) {
+//         for (let j = 0; j <= i; j++) {
+//             hasil += '* ';
+//         }
+//         hasil += '\n';
+//     }
+//     return hasil;
+// }
+// console.log(segitiga1(5));
 
 
-let bintang = '';
-for (let a=1; a<=7; a++){
-    bintang += '* ';
-}
-console.log(bintang);
+// let bintang = '';
+// for (let a=1; a<=7; a++){
+//     bintang += '*';
+// }
+// console.log(bintang);
+
+// let hasil = '';
+// for (let i=5 ; i>0 ; i--){
+//     for (let j=0; j<i; j++){
+//         hasil += '*';
+//         // console.log(hasil);
+//     }
+//     console.log('\n');
+// }
+
+// console.log(hasil);
+
+
+// let hasil='';
+
+//     for(let b=0; b<5 ; b++){
+//         hasil += '*';
+//         console.log(hasil);
+//     }
+
+let hasilkanan = '';
+
+for(let b=5; b>0 ; b--){
+    // hasilkanan += '*';
+    // console.log(hasilkanan);
+    console.log('*');
+} 
+console.log ('oke');
