@@ -4,12 +4,12 @@ console.log("- Segitiga 4 \n");
 function piramid4(baris){
     let hasil = '';
 
-    for(let a=baris; a>0; a--){
-        for(let b= baris-1; b>=a; b--){
+    for(let a=baris; a>0; a--){             
+        for(let b= baris-1; b>=a; b--){    
             hasil += ' ';
         }
 
-        for(let b=1; b<= a; b++){
+        for(let b=1; b<= a; b++){          
             hasil += '*';
         }
      
@@ -18,7 +18,7 @@ function piramid4(baris){
 
     return hasil;
 }
-console.log(piramid4(3));
+console.log(piramid4(5));
 
 
 console.log("- Segitiga 3 \n");
