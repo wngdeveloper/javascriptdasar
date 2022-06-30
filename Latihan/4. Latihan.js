@@ -1,17 +1,87 @@
-function powersOfTwo(n){
-      // return []
-      let hasil = [];
 
-      for(let i=0;i<=n;i++){
-            // hasil += Math.pow(2,i) + ',';
-            hasil.push(2 ** i);
-        }
+const rps = (p1, p2) => {
+  let result = '';
+  let satu = "Player 1 won!";
+  let dua = "Player 2 won!";
+  let tiga = "Draw!";
+
+  if(p1 === p2){
+    result = tiga;
+  }
+
+  if(p1 === "rock"){
+    if(p2 === "scissors"){
+      result = satu;
+    } 
+  }
+
+  if(p1 === "scissors"){
+    if(p2 === "rock"){
+      result = dua;
+    } 
+  }
+
+  if(p1 === "scissors"){
+    if(p2 === "paper"){
+      result = satu;
+    } 
+  }
+
+  if(p1 === "paper"){
+    if(p2 === "scissors"){
+      result = dua;
+    } 
+  }
+
+  if(p1 === "paper"){
+    if(p2 === "rock"){
+      result = satu;
+    } 
+  }
+
+  if(p1 === "rock"){
+    if(p2 === "paper"){
+      result = dua;
+    } 
+  }
+
+return result;
+};
+
+console.log(rps('scissors', 'scissors')); //draw
+console.log(rps('scissors', 'rock')); //dua
+console.log(rps('rock', 'paper')); //dua
+console.log(rps('paper', 'rock')); //satu
+console.log(rps('rock', 'scissors')); //satu
+console.log(rps('rock', 'rock')); //draw
+
+// ################################################
+
+//Tugas 5
+
+// var replaceDots = function(str) {
+//   return str.replace(/\./g, "-");
+// }
+
+// console.log(replaceDots("aku.suka.kamu"))
+
+// ################################################
+
+//Tugas 4
+
+// function powersOfTwo(n){
+//       let hasil = [];
+
+//       for(let i=0;i<=n;i++){
+//             // hasil += Math.pow(2,i) + ',';        //cara sendiri tapi g ketemu
+//             hasil.push(2 ** i);
+//         }
       
-      return hasil;
-    }
+//       return hasil;
+//     }
 
 
-console.log(powersOfTwo(4));
+// console.log(powersOfTwo(4));
 
 // ################################################
 
