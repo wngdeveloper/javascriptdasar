@@ -1,59 +1,62 @@
+// ################################################
 
-const rps = (p1, p2) => {
-  let result = '';
-  let satu = "Player 1 won!";
-  let dua = "Player 2 won!";
-  let tiga = "Draw!";
+//Tugas 6
 
-  if(p1 === p2){
-    result = tiga;
-  }
+// const rps = (p1, p2) => {
+//   let result = '';
+//   let satu = "Player 1 won!";
+//   let dua = "Player 2 won!";
+//   let tiga = "Draw!";
 
-  if(p1 === "rock"){
-    if(p2 === "scissors"){
-      result = satu;
-    } 
-  }
+//   if(p1 === p2){
+//     result = tiga;
+//   }
 
-  if(p1 === "scissors"){
-    if(p2 === "rock"){
-      result = dua;
-    } 
-  }
+//   if(p1 === "rock"){
+//     if(p2 === "scissors"){
+//       result = satu;
+//     } 
+//   }
 
-  if(p1 === "scissors"){
-    if(p2 === "paper"){
-      result = satu;
-    } 
-  }
+//   if(p1 === "scissors"){
+//     if(p2 === "rock"){
+//       result = dua;
+//     } 
+//   }
 
-  if(p1 === "paper"){
-    if(p2 === "scissors"){
-      result = dua;
-    } 
-  }
+//   if(p1 === "scissors"){
+//     if(p2 === "paper"){
+//       result = satu;
+//     } 
+//   }
 
-  if(p1 === "paper"){
-    if(p2 === "rock"){
-      result = satu;
-    } 
-  }
+//   if(p1 === "paper"){
+//     if(p2 === "scissors"){
+//       result = dua;
+//     } 
+//   }
 
-  if(p1 === "rock"){
-    if(p2 === "paper"){
-      result = dua;
-    } 
-  }
+//   if(p1 === "paper"){
+//     if(p2 === "rock"){
+//       result = satu;
+//     } 
+//   }
 
-return result;
-};
+//   if(p1 === "rock"){
+//     if(p2 === "paper"){
+//       result = dua;
+//     } 
+//   }
 
-console.log(rps('scissors', 'scissors')); //draw
-console.log(rps('scissors', 'rock')); //dua
-console.log(rps('rock', 'paper')); //dua
-console.log(rps('paper', 'rock')); //satu
-console.log(rps('rock', 'scissors')); //satu
-console.log(rps('rock', 'rock')); //draw
+// return result;
+// };
+
+// console.log(rps('scissors', 'scissors')); //draw
+// console.log(rps('scissors', 'rock')); //dua
+// console.log(rps('rock', 'paper')); //dua
+// console.log(rps('paper', 'rock')); //satu
+// console.log(rps('rock', 'scissors')); //satu
+// console.log(rps('rock', 'rock')); //draw
 
 // ################################################
 
