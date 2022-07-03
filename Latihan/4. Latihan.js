@@ -1,4 +1,71 @@
 // ################################################
+//Tugas 9 ~ masih Salah --------------
+// function points(s){
+//     return console.log(s);
+  
+//       const iterable = new Map(s);
+  
+//       for (const[key, value] of iterable){
+//         console.log(value);
+//       }
+//     return s ;
+//   }
+  
+//   console.log(points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]) , 15);
+
+// ################################################
+
+//Tugas 8
+//String to Number
+// const stringToNumber = function(str){
+
+//   let n = parseInt(str);
+//   return n;
+
+// }
+
+// console.log(stringToNumber("-399988"));
+  
+
+
+// ################################################
+
+//Tugas 7
+//Ganti Number to Character
+  // correct = function(s){
+  //   return s.replace(/0/g, 'O')
+  //           .replace(/1/g,'I')
+  //           .replace(/5/g,'S');
+  // } //cara 2
+  
+  // console.log(correct("L0ND0N055"));
+  
+  //=== ATAU ===
+  
+//   function correct(string){
+  
+//     let array = [];
+
+//     for(let i = 0; i < string.length; i++){
+
+//       if(string[i] === '5'){
+//         array.push('S');
+//       } else if(string[i] === '0'){
+//         array.push('O');
+//       } else if (string[i] === '1'){
+//         array.push('I');
+//       } else {
+//         array.push(string[i]);
+//       } 
+//     }
+//       return array.join("");
+// }
+
+// console.log(correct("L0ND0N055"));
+
+
+
+// ################################################
 
 //Tugas 6
 
