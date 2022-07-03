@@ -1,4 +1,39 @@
 // ################################################
+// Tugas 10
+//SET ALARM
+
+function setAlarm(a, b){
+  let result = '';
+  let f = false;
+  let t = true;
+
+  if(a===true){
+      if(b===false){
+        return result = t;
+      } else {
+        return result = f;
+      } 
+    } else {
+    return result = f;
+  }
+}
+
+// //--cara lain 1
+
+// function setAlarm(employed, vacation){
+//   return employed && !vacation;
+// }
+
+// //--cara lain 2
+// const setAlarm = (employed, vacation) => employed && !vacation;
+
+console.log(setAlarm(true, true));
+console.log(setAlarm(false,true));
+console.log(setAlarm(true, false));
+console.log(setAlarm(false, false));
+
+
+// ################################################
 //Tugas 9 ~ masih Salah --------------
 // function points(s){
 //     return console.log(s);
