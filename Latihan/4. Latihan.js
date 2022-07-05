@@ -1,22 +1,36 @@
 // ################################################
+//Tugas 11
+//Volume Kubus
+
+// class Kata {
+//   static getVolumeOfCuboid(length, width, height) {
+//     return length * width * height;
+//   }
+// }
+
+// console.log(Kata.getVolumeOfCuboid(1,2,2));
+// console.log(Kata.getVolumeOfCuboid(6.3,2,5));
+
+
+// ################################################
 // Tugas 10
 //SET ALARM
 
-function setAlarm(a, b){
-  let result = '';
-  let f = false;
-  let t = true;
+// function setAlarm(a, b){
+//   let result = '';
+//   let f = false;
+//   let t = true;
 
-  if(a===true){
-      if(b===false){
-        return result = t;
-      } else {
-        return result = f;
-      } 
-    } else {
-    return result = f;
-  }
-}
+//   if(a===true){
+//       if(b===false){
+//         return result = t;
+//       } else {
+//         return result = f;
+//       } 
+//     } else {
+//     return result = f;
+//   }
+// }
 
 // //--cara lain 1
 
@@ -27,10 +41,10 @@ function setAlarm(a, b){
 // //--cara lain 2
 // const setAlarm = (employed, vacation) => employed && !vacation;
 
-console.log(setAlarm(true, true));
-console.log(setAlarm(false,true));
-console.log(setAlarm(true, false));
-console.log(setAlarm(false, false));
+// console.log(setAlarm(true, true));
+// console.log(setAlarm(false,true));
+// console.log(setAlarm(true, false));
+// console.log(setAlarm(false, false));
 
 
 // ################################################
