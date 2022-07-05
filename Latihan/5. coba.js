@@ -1,16 +1,9 @@
-function reverseList(list) {
-
-  let isi = list;
-  let panjang= isi.length;
-  let baris = [];
-
-  for (let a=panjang-1; a>=0; a--){
-    baris.push(isi[a]);
-    // console.log(isi[a]);
-  }
-
-  return baris.join("");
+function capitalizeWord(word) {
+  return word[0].toUpperCase() + word.slice(1);
 }
 
-// console.log(reverseList([1,2,3,4]));
-console.log(reverseList([0,1,5,4]));
+console.log(capitalizeWord('word'));
+console.log(capitalizeWord('word'), 'Word');
+console.log(capitalizeWord('i'), 'I');
+console.log(capitalizeWord('aryo'), 'Iaryo');
+console.log(capitalizeWord('glasswear'), 'Glasswear');

@@ -1,4 +1,59 @@
 // ################################################
+//Tugas 14 ` Capitalization and Mutability
+// https://www.codewars.com/kata/595970246c9b8fa0a8000086/solutions/javascript
+
+function capitalizeWord(word) {
+  let words = word[0].toUpperCase() + '';
+  let panjang = word.length;
+  let kata = [];
+  
+  for (let a=1 ; a<= panjang-1 ; a++){
+    kata.push(word[a]);
+  }
+
+  return words + kata.join("");
+}
+
+console.log(capitalizeWord('word'));
+console.log(capitalizeWord('word'), 'Word');
+console.log(capitalizeWord('i'), 'I');
+console.log(capitalizeWord('aryo'), 'Iaryo');
+console.log(capitalizeWord('glasswear'), 'Glasswear');
+
+
+// ################################################
+// Tugas 13 ` is this my tail? - https://www.codewars.com/kata/56f695399400f5d9ef000af5/solutions/javascript
+
+// function correctTail(body, tail){  
+//   let sub = body.substr(body.length-tail.length);
+   
+//   console.log(sub);
+//    if (sub === tail){
+//        return true
+//      } else {
+//      return false
+//    }
+//  }
+ 
+//  console.log(correctTail("Fox", "x"), true);
+//  console.log(correctTail("Rhino", "o"), true);
+//  console.log(correctTail("Meerkat", "t"), true);
+//  console.log(correctTail("Aryo", "b"), true);
+
+
+// ################################################
+// Tugas 12 ` reverse array
+
+// function reverseList(list){
+//   const reserved = list.reverse();
+//   return reserved;
+// }
+
+// console.log(reverseList([1,2,3,4]));
+// console.log(reverseList([0,1,5,4]));
+
+
+// ################################################
 //Tugas 11
 //Volume Kubus
 
